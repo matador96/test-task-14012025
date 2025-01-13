@@ -1,0 +1,324 @@
+@import './variables.scss';
+
+$base-color: #24292e;
+$successColor: #2f9461;
+
+body {
+   color: $base-color;
+}
+
+.ant-layout-header {
+   border-bottom: 1px rgba(199, 199, 199, 0.88) solid;
+   background: #fff;
+}
+
+label.ant-form-item-required::after {
+   display: inline-block !important;
+   margin-inline-end: 4px !important;
+   color: #ff4d4f !important;
+   font-size: 14px !important;
+   font-family: SimSun, sans-serif !important;
+   line-height: 1 !important;
+   content: '*' !important;
+   visibility: visible !important;
+}
+
+label.ant-form-item-required::before {
+   display: none !important;
+}
+
+.ant-form-item-control-input-content .ant-input-affix-wrapper,
+.ant-form-item-control-input-content > input,
+.ant-form-item-control-input-content .ant-picker,
+.ant-select .ant-select-selector,
+.ant-input-number-input-wrap > input {
+   min-height: 44px;
+   padding: 10px 14px 10px 14px;
+   border-radius: 8px;
+   background: #ffffff;
+   border: 0 !important;
+   box-shadow:
+      0px 1px 1px 0px #0000001f,
+      0px 0px 0px 1px #676e7629,
+      0px 2px 5px 0px #676e7614 !important;
+}
+.ant-select {
+   .ant-select-arrow {
+      height: 22px !important;
+   }
+}
+
+.ant-input-prefix {
+   //styleName: Body/md/Regular;
+   font-family: Inter;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   text-align: left;
+   color: #676e76;
+   padding-right: 3px;
+}
+
+.checkbox-group-1 .ant-checkbox-wrapper {
+   line-height: 24px;
+   font-family: Inter;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
+   text-align: left;
+   gap: 12px;
+}
+
+.avatar-uploader {
+   display: flex !important;
+   align-items: center;
+   justify-content: center;
+
+   &:hover {
+      cursor: pointer;
+   }
+
+   .ant-upload-select {
+      margin: 0 !important;
+      height: 100px !important;
+      width: 100px !important;
+      border: 0 !important;
+      background: #f6f7f9 !important;
+   }
+}
+
+.ant-checkbox-wrapper .ant-checkbox-inner {
+   border: 2px solid #0b9093;
+   width: 24px;
+   height: 24px;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner {
+   border: 2px solid #0b9093 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+   background-color: #0b9093 !important;
+   border: 2px solid #0b9093 !important;
+}
+
+.ant-layout-content {
+   display: flex;
+   flex-direction: column;
+}
+
+.menu.ant-menu {
+   position: sticky;
+   top: 0;
+}
+
+.ant-steps
+   .ant-steps-item-finish
+   > .ant-steps-item-container
+   > .ant-steps-item-tail::after,
+.ant-steps
+   .ant-steps-item-finish
+   .ant-steps-item-icon
+   > .ant-steps-icon
+   .ant-steps-icon-dot,
+.ant-steps
+   .ant-steps-item-process
+   .ant-steps-item-icon
+   > .ant-steps-icon
+   .ant-steps-icon-dot {
+   background-color: #474a53;
+}
+
+.ant-steps.ant-steps-label-vertical .ant-steps-item-content {
+   margin-top: 5px;
+}
+
+.ant-drawer-title {
+   color: $base-color !important;
+}
+
+.ant-modal .ant-modal-header {
+   border-bottom: 1px solid #f0f0f0;
+   padding-bottom: 15px;
+}
+
+.ant-progress-steps-item {
+   border-radius: 2px;
+}
+
+.ant-radio-wrapper .ant-radio-checked::after {
+   border-color: $base-color;
+}
+
+.ant-table-wrapper .ant-table-column-sorter-up.active,
+.ant-table-wrapper .ant-table-column-sorter-down.active {
+   color: $base-color;
+}
+
+.ant-radio-wrapper:hover .ant-radio-inner {
+   border-color: $base-color;
+}
+.ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+   border-color: #2f9461;
+   background-color: #2f9461;
+}
+
+.ant-input:hover,
+.ant-input:focus {
+   border-color: $base-color;
+   box-shadow: none;
+}
+
+.ant-pagination .ant-pagination-item-active {
+   border-color: $base-color;
+
+   a {
+      color: $base-color;
+   }
+}
+
+.ant-radio-button-wrapper {
+   border-color: $base-color;
+
+   &:hover {
+      border-color: $base-color;
+      outline: none;
+      box-shadow: none;
+   }
+
+   &-checked {
+      border-color: $base-color;
+      color: #fff;
+      background-color: $base-color !important;
+   }
+}
+
+.ant-select {
+   .ant-select-selector:hover,
+   .ant-select-selector:focus {
+      box-shadow: none;
+      outline: none;
+      border-color: $base-color !important;
+   }
+}
+
+#root {
+   h1,
+   h2,
+   h3,
+   h4 {
+      color: $base-color;
+   }
+
+   .ant-menu-item-disabled {
+      cursor: default !important;
+   }
+
+   .ant-menu {
+      &-horizontal {
+         .ant-menu-item {
+            font-size: 14px;
+            height: 62px;
+            line-height: 62px;
+
+            &:hover {
+               border-bottom: none !important;
+            }
+
+            &.ant-menu-item-selected {
+               color: #0b9093;
+            }
+         }
+      }
+      &-item,
+      &-submenu {
+         height: 32px;
+         line-height: 32px;
+         border-top-left-radius: 0;
+         border-bottom-left-radius: 0;
+         border-left: 2px transparent solid;
+         color: $base-color;
+         font-size: 12px;
+         font-weight: 500;
+      }
+   }
+
+   .ant-layout {
+      .ant-layout-sider {
+         border-right: 1px rgba(199, 199, 199, 0.88) solid;
+         background: #fff;
+      }
+   }
+
+   .ant-layout .ant-layout-sider-trigger {
+      color: $base-color;
+      background: #ffffff;
+      border-right: 1px rgba(199, 199, 199, 0.88) solid;
+   }
+
+   .ant-card {
+      // display: flex;
+      // align-items: center;
+      // height: 100%;
+      box-shadow:
+         0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+         0px 0px 0px 1px rgba(103, 110, 118, 0.16),
+         0px 2px 5px 0px rgba(103, 110, 118, 0.08);
+
+      // box-shadow:
+      //    0px 5px 30px 0px rgba(103, 110, 118, 0.08),
+      //    0px 2px 15px 0px rgba(73, 75, 74, 0.15);
+
+      &-actions {
+         border: none !important;
+      }
+   }
+}
+
+.ant-layout-footer {
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.custom-input-container.ant-form-item-has-error .ant-form-item-label > label {
+   color: rgba(205, 54, 54, 1); /* Красный цвет для метки при ошибке */
+}
+.custom-input-container.ant-form-item-has-error {
+   border-color: rgba(205, 54, 54, 1);
+}
+
+.custom-input-container.ant-form-item-has-error
+   .ant-form-item-control-input
+   .ant-input-affix-wrapper,
+.custom-input-container.ant-form-item-has-error .ant-form-item-control-input {
+   border-color: #ff4d4f; /* Красный цвет границы для Input при ошибке */
+}
+.custom-input-container .ant-form-item-explain-error {
+   margin: 8px 0 0 16px;
+   color: #cd3636 !important; /* Красный цвет текста */
+   font-family: Inter, sans-serif; /* Шрифт */
+   font-size: 12px; /* Размер шрифта */
+   font-style: normal; /* Стиль шрифта */
+   font-weight: 400; /* Толщина шрифта */
+   line-height: 16px; /* Высота строки */
+   width: 300px !important;
+}
+
+.custom-input-container .ant-form-item-help {
+   width: 300px;
+}
+
+.custom-input-container.ant-form-item-has-error
+   .ant-form-item-control-input
+   .ant-input:focus,
+.custom-input-container.ant-form-item-has-error
+   .ant-form-item-control-input
+   .ant-input:hover,
+.custom-input-container.ant-form-item-has-error
+   .ant-form-item-control-input
+   .ant-input:active {
+   border-color: transparent !important; /* Задаем прозрачный цвет границы */
+   box-shadow: none !important; /* Убираем тень */
+}
