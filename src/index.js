@@ -29,7 +29,7 @@ dayjs.extend(tz);
 
 dayjs.tz.setDefault('Etc/UCT');
 
-const PATH_APP = process.env.REACT_APP_ROOT_PATH || '/';
+const PATH_APP = '/';
 
 root.render(
    <BrowserRouter basename={PATH_APP}>

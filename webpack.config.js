@@ -9,7 +9,7 @@ const DEV_SERVER_BACKEND_API = 'localhost:3099';
 
 module.exports = (env) => {
    const isProduction = !!env.production;
-   const rootPath = env?.root_path || '';
+   const rootPath = '';
 
    return {
       entry: './src/index.js',
